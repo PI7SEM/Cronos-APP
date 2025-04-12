@@ -1,0 +1,71 @@
+#logo {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 50px;   
+    border-radius: 8px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-content-area {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.card-content-area label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-content-area input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;   
+}
+
+.card-content-area input:focus {
+    border-color: #000000;
+    background: #fff;
+    outline: none;
+}
+
+.card-footer {
+    margin-top: 30px;
+}
+
+.card-footer .submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;    
+}
+
+.card-footer .submit:hover {
+    background-color: #030305;
+}
+
+.recuperar_senha {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;     
+}
+
+.recuperar_senha:hover {
+    color: #000000;
+    text-decoration: underline;
+}
