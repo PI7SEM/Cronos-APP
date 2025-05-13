@@ -1,0 +1,46 @@
+#opacidade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2); /* Preto com 10% de opacidade */
+    z-index: 1; /* Coloca a camada de opacidade acima do fundo */
+}
+
+#containerLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("https://www.munclair.com.br/wp-content/themes/iluminacao/img/logo.png");
+    background-size: 100%; /* Ajusta a largura para 100% e altura automática */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 155px;
+    height: 50px;
+
+    margin: 10px 0px 0 10px;
+    z-index: 2; /* Coloca a camada de opacidade acima do fundo */
+
+}
+
+#containerTitulo {
+    background-image: url("../Imagens/Cronos\ -\ uma\ experiencia\ munclair.png");
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    margin: 20px;
+
+    width: 313px;
+    height: 75px;
+
+    position: absolute;
+    top: 45%; /* Centraliza verticalmente */
+    left: 0; /* Alinha à esquerda */
+    transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
+    z-index: 2; /* Coloca a camada de opacidade acima do fundo */
+
+}

@@ -1,71 +1,125 @@
-#logo {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin: 0 auto 50px;   
-    border-radius: 8px;
+#containerLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("https://www.munclair.com.br/wp-content/themes/iluminacao/img/logo.png");
+    background-size: 100%; /* Ajusta a largura para 100% e altura automática */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 155px;
+    height: 50px;
+
+    margin: 10px 0px 0 10px;
 }
 
-.card-header {
-    text-align: center;
-}
+#formContainer{
 
-.card-content-area {
-    text-align: left;
-    margin-bottom: 15px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;   
+    background-color: rgba(240, 194, 144, 0.2);
 
-.card-content-area label {
-    font-size: 15px;
-    font-weight: bold;
-    color: #333;
-    display: block;
-    margin-bottom: 15px;
-}
+   
+    width: 80vw;
+    height: 50vh;
 
-.card-content-area input {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    font-size: 16px;   
-}
-
-.card-content-area input:focus {
-    border-color: #000000;
-    background: #fff;
-    outline: none;
-}
-
-.card-footer {
-    margin-top: 30px;
-}
-
-.card-footer .submit {
-    width: 100%;
-    padding: 15px;
-    background-color: #000000;
-    color: white;
-    font-size: 18px;
     border: none;
-    border-radius: 25px;
-    cursor: pointer;    
+    border-radius: 8px;
+
 }
 
-.card-footer .submit:hover {
-    background-color: #030305;
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 16px;
+    height: 100%;
+
 }
 
-.recuperar_senha {
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
+.controleform{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 75px;
+    /* margin: 0px 40px 0px 40px; */
+    align-items: center;
+}
+
+.controleform label{
+    font-size: 13pt;
+    padding-bottom: 5px;
+    text-align: left;
+    width: 250px;
+    color: #fff;
+}
+
+.controleform input{
+    height: 40px;
+    width: 250px;
+    border: none;
+    background-color: rgba(226,232,240,1);
+    border-radius: 8px;
+    padding: 10px 20px;
+    
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
     color: #000000;
-    text-decoration: none;     
+    cursor: pointer;
+    /* box-shadow: inset 2px 2px 1px #ac9fa8; */
 }
 
-.recuperar_senha:hover {
-    color: #000000;
-    text-decoration: underline;
+button[type="submit"] {
+    background-color: #ffffff;
 }
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+background-color: #e6dbb5;
+}
+
+button[type="submit"]:active {
+    box-shadow: inset 1px 1px 2px #e6dbb5;
+}
+
+.controleformSet{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    align-items: center;
+    color: #fff;
+
+}
+
+.controleformSet input{
+    height: 15px;
+    border: none;
+    background-color: rgba(226,232,240,1);
+    margin-right: 8px;
+}
+
+#boasVindas{
+    background-image: url("../Imagens/Cronos\ -\ uma\ experiencia\ munclair.png");
+    background-size: 80%; /* Ajusta a largura para 100% e altura automática */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: rgb(109, 79, 47);
+
+    width: 80vw;
+    height: 20vh;
+
+    border: none;
+    border-radius: 8px 8px 0px 0px;
+}
+
