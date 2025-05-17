@@ -18,7 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    setTimeout(() => {
-        aumentarOpacidade(); // Inicia o aumento de opacidade após 3 segundos
-    }, 3000); // Aguarda 3 segundos (3000ms)
+    setTimeout(() => {    aumentarOpacidade(); console.log("entrou");    }, 3000); // Aguarda 3 segundos (3000ms)
 });
