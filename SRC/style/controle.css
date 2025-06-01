@@ -120,14 +120,65 @@
 
 
 .controleCores{
-  width: 100%;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  display: flex;
+  gap: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
   /* background: #b99624; */
 
+  overflow-y: auto;
+
+  z-index: 2;
+
+}
+
+.controle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.porcentagem {
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+.barra-vertical {
+    background-color: #333;
+    width: 30px;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Seletor começa no topo */
+}
+
+.seletor {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: 0; /* Posição inicial no topo */
+    cursor: grab;
+}
+
+.seletor.arrastando {
+    cursor: grabbing;
+}
+
+.oculto{
+  display: none;
 }
