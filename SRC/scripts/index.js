@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             elementLogo.style.zIndex = 0;
             requestAnimationFrame(aumentarOpacidade); // Chama novamente para continuar o efeito
         } else {
-            window.location.href = "../SRC/html/login.html"; // Redireciona para login.html
+            window.location.href = "../Cronos-APP/SRC/html/login.html"; // Redireciona para login.html
         }
     };
 
