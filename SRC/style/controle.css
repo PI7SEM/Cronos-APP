@@ -1,3 +1,16 @@
+:root {
+    --cor-luminaria-bg: #b99624;
+    --cor-lampada-inativa-radial-1: #555;
+    --cor-lampada-inativa-radial-2: #222;
+    --cor-lampada-ativa-radial-1: #f1e07f;
+    --cor-lampada-ativa-radial-2: #e0b921;
+    --sombra-lampada-inativa: #000;
+    --sombra-lampada-ativa: #ffdf00;
+    --cor-texto-claro: #f0f0f0;
+    --cor-texto-secundario: #d4af37;
+    --cor-fundo-pagina: #1c1c1c;
+}
+
 .luminaria {
     background: #b99624;
     border-radius: 15px;
@@ -102,21 +115,18 @@
 }
 
 /* Exemplo de como aplicar ícones individualmente (usando SVG ou PNG como bg) */
-.nav-item:nth-child(1) .icon {
+.nav-item:nth-child(2) .icon {
   background-image: url("https://cdn-icons-png.flaticon.com/512/10573/10573532.png");
 }
 
-.nav-item:nth-child(2) .icon {
+.nav-item:nth-child(3) .icon {
   background-image: url("https://cdn-icons-png.flaticon.com/512/8637/8637690.png");
 }
 
-.nav-item:nth-child(3) .icon {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/1479/1479689.png");
+.nav-item:nth-child(1) .icon {
+  background-image: url("../Imagens/icons/bot.png");
 }
 
-.nav-item:nth-child(4) .icon {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/3506/3506680.png");
-}
 
 
 .controleCores{
@@ -143,7 +153,7 @@
 
 }
 
-.controle {
+/* .controle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +166,43 @@
 
 .barra-vertical {
     background-color: #333;
+    width: 30px;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.seletor {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    cursor: grab;
+}
+
+.seletor.arrastando {
+    cursor: grabbing;
+} */
+
+.controle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Adicionado para espaçamento visual */
+}
+
+.porcentagem {
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+.barra-vertical {
+    background-color: #333; /* Fallback caso o gradiente não seja suportado */
     width: 30px;
     height: 250px;
     border-radius: 15px;
@@ -179,6 +226,92 @@
     cursor: grabbing;
 }
 
+/* Gradientes para cada cor */
+#red .barra-vertical {
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.1), #ff0000); /* Do transparente/claro para vermelho */
+}
+
+#green .barra-vertical {
+    background-image: linear-gradient(to top, rgba(0, 255, 0, 0.1), #00ff00); /* Do transparente/claro para verde */
+}
+
+#blue .barra-vertical {
+    background-image: linear-gradient(to top, rgba(0, 0, 255, 0.1), #0000ff); /* Do transparente/claro para azul */
+}
+
+
+#brigthness .barra-vertical {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), #e0b921); /* Do transparente/claro para branco */
+}
+/* Apenas para visualização, você pode remover se a classe oculto for controlada por JS */
+.controleCoresCores {
+    display: flex; /* Sobrescreve o 'oculto' para visualização */
+}
+
+/* #ia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+
+.aiAgent_voice-command-container {
+    background-color: rgba(40, 40, 40, 0.5);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+.aiAgent_lampada {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(var(--cor-lampada-inativa-radial-1), var(--cor-lampada-inativa-radial-2));
+    box-shadow: 0 0 15px var(--sombra-lampada-inativa);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px auto;
+}
+
+.aiAgent_lampada.aiAgent_ativa {
+    background: radial-gradient(var(--cor-lampada-ativa-radial-1), var(--cor-lampada-ativa-radial-2));
+    box-shadow: 0 0 30px var(--sombra-lampada-ativa), 0 0 40px var(--cor-lampada-ativa-radial-1);
+}
+
+.aiAgent_lampada .aiAgent_mic-icon {
+    font-size: 42px;
+    color: var(--cor-luminaria-bg);
+    transition: color 0.3s ease;
+}
+
+.aiAgent_lampada.aiAgent_ativa .aiAgent_mic-icon {
+    color: #fff;
+}
+
+#aiAgent_status {
+    font-size: 1.1em;
+    color: var(--cor-texto-claro);
+    margin-bottom: 15px;
+    min-height: 1.5em;
+}
+
+#aiAgent_transcript {
+    font-size: 1em;
+    font-style: italic;
+    color: var(--cor-texto-secundario);
+    min-height: 2em;
+    word-wrap: break-word;
+}
+
 .oculto{
   display: none;
 }
+

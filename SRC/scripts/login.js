@@ -17,7 +17,7 @@ async function verifyCredentials(url, params) {
     }
 
     if (data.status == "200"){
-        window.location.href = "../html/controle.html";
+        window.location.href = "Cronos-APP/html/controle.html";
     }
 }
 
